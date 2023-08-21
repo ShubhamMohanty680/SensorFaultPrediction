@@ -7,7 +7,7 @@ It undergoes many microfabrication processes, such as doping, ion implantation, 
 
 
 💿 Installing
-1. Environment setup.
+1. Environment setup
 ```
 conda create --prefix venv python==3.8 -y
 ```
