@@ -18,7 +18,7 @@ conda activate venv/
 ```
 pip install -r requirements.txt
 ```
-5. Run Application
+3. Run Application
 ```
 python app.py
 ```
