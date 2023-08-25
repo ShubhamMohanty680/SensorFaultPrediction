@@ -155,13 +155,6 @@ class ModelTrainer:
 
             logging.info(f"Extracting model config file path")
 
-
-            
-
-
-
-            logging.info(f"Extracting model config file path")
-
             model_report: dict = self.evaluate_models(X=x_train, y=y_train, models=self.models)
 
             ## To get best model score from dict
