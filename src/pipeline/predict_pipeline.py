@@ -43,7 +43,7 @@ class PredictionPipeline:
             On Failure  :   Write an exception log and then raise an exception
             
             Version     :   1.2
-            Revisions   :   moved setup to cloud
+            Revisions   :   moved setup to the cloud
         """
 
         try:
