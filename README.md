@@ -30,5 +30,5 @@ python app.py
 - Scikit learn
 - 🏦 Industrial Use Cases
 
-  # Screenshot
+#Screenshot
   
