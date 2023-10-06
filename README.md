@@ -7,7 +7,7 @@ It undergoes many microfabrication processes, such as doping, ion implantation, 
 
 
 💿 Installing
-1. Environment setup.
+1. Environment setup
 ```
 conda create --prefix venv python==3.8 -y
 ```
@@ -18,7 +18,7 @@ conda activate venv/
 ```
 pip install -r requirements.txt
 ```
-5. Run Application
+3. Run Application
 ```
 python app.py
 ```
@@ -29,3 +29,4 @@ python app.py
 - Machine learning
 - Scikit learn
 - 🏦 Industrial Use Cases
+  
