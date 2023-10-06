@@ -153,12 +153,6 @@ class ModelTrainer:
 
             
 
-            logging.info(f"Extracting model config file path")
-
-
-            
-
-
 
             logging.info(f"Extracting model config file path")
 

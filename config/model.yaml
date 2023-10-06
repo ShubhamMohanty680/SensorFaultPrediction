@@ -22,13 +22,6 @@ model_selection:
            - 0.1
            - 0.2
           
-          
-      GradientBoostingClassifier:
-        search_param_grid:
-          n_estimators:
-           - 100
-          criterion:
-           - friedman_mse
 
       SVC:
         search_param_grid:
