@@ -31,7 +31,7 @@ python app.py
 - 🏦 Industrial Use Cases
   
 
-##Snapshots:
+## Snapshots:
 
 ![image](https://github.com/ShubhamMohanty680/SensorFaultPrediction/assets/101620532/56ccf3dc-510f-46a5-9c98-47454c1c932a)
 
@@ -44,6 +44,7 @@ python app.py
 ![Screenshot 2024-01-16 140105](https://github.com/ShubhamMohanty680/SensorFaultPrediction/assets/101620532/2adf17b4-af12-44b8-8ac1-dc84add6027c)
 
 
+![Screenshot 2024-01-16 141722](https://github.com/ShubhamMohanty680/SensorFaultPrediction/assets/101620532/f81033d6-526a-4a91-83a9-5a4a842ca2b8)
 
 
 
