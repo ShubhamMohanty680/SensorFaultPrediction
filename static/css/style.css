@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
 .frame {
   position: absolute;
   top: 50%;
@@ -34,20 +35,24 @@
 .title {
   width: 100%;
   height: 50px;
-  border-bottom: 1px solid #999;
+  margin-top: 0;
+  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid #000000;
   text-align: center;
 }
 
 h1 {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
   font-weight: 300;
-  color: #666;
+  color: #000000;
 }
 
 .dropzone {
   width: 100px;
   height: 80px;
-  border: 1px dashed #999;
+  border: 1px dashed #000000;
   border-radius: 3px;
   text-align: center;
 }

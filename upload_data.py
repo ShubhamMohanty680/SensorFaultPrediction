@@ -13,7 +13,7 @@ DATABASE_NAME='ML_Project'
 COLLECTION_NAME='wafer_fault'
 
 # read data as an dataframe
-df=pd.read_csv("D:\ML_Projects\sensor-fault-detection\notebooks\wafer_23012020_041211.csv")
+df=pd.read_csv(r"D:\ML_Projects\sensor-fault-detection\notebooks\wafer_23012020_041211.csv")
 df=df.drop("Unnamed: 0",axis=1)
 
 #convert the data into json

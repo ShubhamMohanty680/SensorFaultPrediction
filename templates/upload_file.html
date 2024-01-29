@@ -1,41 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Wafer fault detection</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="../static/css/style.css">
+	<meta charset="UTF-8">
+	<title>Wafer Fault Detection</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+	<style>
+		body {
+			background-image: url(../static/css/pic.jpeg);
+			background-color: rgba(0, 174, 255, 0.57);
+			background-blend-mode: overlay;
+			background-size: cover;
+		}
 
+		/* Additional style for displaying file name and image */
+		.file-info {
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		.file-info img {
+			max-width: 50px;
+			margin-right: 10px;
+		}
+	</style>
 </head>
+
 <body>
-	
-<!-- partial:index.partial.html -->
-<form action = "/predict" method = "post" enctype="multipart/form-data" >
-	<h1 class="title">Upload CSV for the prediction</h1>
-<div class="frame">
-	<div class="center">
-		<div class="title">
-			<h1>Drop file to upload</h1>
-		</div>
-		
+	<form action="/predict" method="post" enctype="multipart/form-data">
+		<h1 class="title">Upload CSV for the prediction</h1>
+		<div class="frame">
+			<div class="center">
+				<div class="title">
+					<h1>Drop file to upload</h1>
+				</div>
 
-			<div class="dropzone">
-				<img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
-				<input type="file" class="upload-input" name = "file" accept=".csv" >
+				<div class="dropzone" id="dropzone">
+					<img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" id="upload-icon" />
+					<input type="file" class="upload-input" name="file" accept=".csv" id="fileInput">
+				</div>
+
+				<!-- Display file name and image -->
+				<div class="file-info" id="fileInfo" style="display: none;">
+					<img src="https://img.icons8.com/ios-filled/50/000000/csv.png" alt="CSV Icon">
+					<span id="fileName"></span>
+				</div>
+
+				<button type="submit" class="btn" name="uploadbutton" id="uploadButton">Upload file</button>
 			</div>
+		</div>
+	</form>
 
-		<button type="submit" class="btn" name="uploadbutton">Upload file</button>
-		
-	</div>
+	<!-- original pen: https://codepen.io/roydigerhund/pen/ZQdbeN  -->
 
-</div>
-
-</form>
-<!-- original pen: https://codepen.io/roydigerhund/pen/ZQdbeN  -->
-
-<!-- NO JS ADDED YET -->
-<!-- partial -->
-  <script src='https://100dayscss.com/codepen/js/jquery.min.js'></script><script  src="./script.js"></script>
+	<!-- NO JS ADDED YET -->
+	<!-- partial -->
+	<script src='https://100dayscss.com/codepen/js/jquery.min.js'></script>
+	<script src="../static/css/script.js"></script>
 
 </body>
+
 </html>
+
+<script>
+	document.getElementById('uploadButton').addEventListener('click', function () {
+		// Add a delay of 5 seconds (5000 milliseconds) before executing the function
+		setTimeout(function () {
+			// Your function or code to execute after 5 seconds
+			window.location.href = '/result';
+		}, 2000);
+	});
+</script>

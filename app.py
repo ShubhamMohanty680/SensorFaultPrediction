@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Welcome to my application"
+    return render_template('home.html')
 
 
 @app.route("/train")
@@ -19,10 +19,14 @@ def train_route():
         train_pipeline = TraininingPipeline()
         train_pipeline.run_pipeline()
 
-        return "Training Completed."
+        return render_template('training_complete.html')
 
     except Exception as e:
         raise CustomException(e,sys)
+
+@app.route('/result', methods=['GET'])
+def result():
+        return render_template('result.html')
 
 @app.route('/predict', methods=['POST', 'GET'])
 def upload():
@@ -41,7 +45,6 @@ def upload():
             return send_file(prediction_file_detail.prediction_file_path,
                             download_name= prediction_file_detail.prediction_file_name,
                             as_attachment= True)
-
 
         else:
             return render_template('upload_file.html')
