@@ -30,3 +30,20 @@ python app.py
 - Scikit learn
 - 🏦 Industrial Use Cases
   
+
+##Snapshots:
+
+![image](https://github.com/ShubhamMohanty680/SensorFaultPrediction/assets/101620532/56ccf3dc-510f-46a5-9c98-47454c1c932a)
+
+
+
+![Screenshot 2024-01-16 135909](https://github.com/ShubhamMohanty680/SensorFaultPrediction/assets/101620532/6fc0abce-4c17-4343-8a75-253379ce6ce8)
+
+
+
+![Screenshot 2024-01-16 140105](https://github.com/ShubhamMohanty680/SensorFaultPrediction/assets/101620532/2adf17b4-af12-44b8-8ac1-dc84add6027c)
+
+
+
+
+
